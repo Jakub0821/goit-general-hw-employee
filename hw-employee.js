@@ -1,32 +1,28 @@
-const employee = [
-    {
-      personalInfo: {
-        firstName: "John",
-        lastName: "Doe",
-        age: 30,
-        address: {
-          city: "Anytown",
-          state: "NY",
-          postalCode: "12345",
-        },
+const employee = {
+    personalInfo: {
+      firstName: "John",
+      lastName: "Doe",
+      age: 30,
+      address: {
+        street: "123 Main St",
+        city: "Anytown",
+        state: "NY",
+        postalCode: "12345",
       },
     },
-    [
-      {
-        employmentDetails: {
-          position: "Software Engineer",
-          department: "Engineering",
-          startDate: "2022-01-01",
-          endDate: null,
-          manager: {
-            firstName: "Alice",
-            lastName: "Smith",
-            email: "alice@example.com",
-          },
-        },
+    employmentDetails: {
+      position: "Software Engineer",
+      department: "Engineering",
+      startDate: "2022-01-01",
+      endDate: null,
+      manager: {
+        firstName: "Alice",
+        lastName: "Smith",
+        email: "alice@example.com",
       },
-    ],
-  ];
+    },
+  };
+  
   
   function getEmployeeInfo(employee, key) {
     for (let item of employee) {
